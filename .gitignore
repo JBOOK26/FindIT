@@ -1,0 +1,15 @@
+# Local database credentials
+/config/database.php
+/config/*.local.php
+.env
+.env.*
+
+# Uploaded item files
+/uploads/*
+!/uploads/.gitkeep
+!/uploads/.htaccess
+
+# Sensitive and local files
+*.pem
+*.key
+*.credentials.*

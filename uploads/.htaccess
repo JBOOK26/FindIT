@@ -1,0 +1,6 @@
+Options -Indexes -ExecCGI -MultiViews
+Require all denied
+
+<IfModule php_module>
+    php_flag engine off
+</IfModule>

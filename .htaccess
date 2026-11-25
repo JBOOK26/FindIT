@@ -1,0 +1,15 @@
+Options -Indexes
+DirectoryIndex index.php
+
+# Block dotfiles and hidden directories, including version-control metadata.
+RewriteEngine On
+RewriteRule (^|/)\. - [F]
+
+<FilesMatch "(?i)(?:^\.|\.(?:sql|md|markdown|log|ini|env|bak|backup|orig|old|swp|phps|ps1|pem|key|zip|credentials)(?:\.|$))">
+    Require all denied
+</FilesMatch>
+
+# Limit this override to FindIT on Apache/mod_php.
+<IfModule php_module>
+    php_flag display_errors off
+</IfModule>

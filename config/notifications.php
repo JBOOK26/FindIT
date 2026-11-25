@@ -1,0 +1,3 @@
+<?php
+
+const FINDIT_NOTIFICATION_INBOX_DAYS = 90;
